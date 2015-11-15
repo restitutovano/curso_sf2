@@ -1,0 +1,9 @@
+{%  extends '::base.html.twig' %}
+
+{% block title %}{{ parent() }}Resultados{% endblock %}
+
+{% block body %}
+    <div>
+        <p>El resultado de <span style="color:blue; font-size: 120%">{{ op1 }}</span> {{ operation }} <span style="color:blue; font-size: 120%">{{ op2 }}</span> es: <span style="color:blue; font-size: 130%">{{ result }}</span></p>
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{%  extends '::base.html.twig' %}
+
+{% block title %}{{ parent() }}Home{% endblock %}
+
+{% block body %}
+    <ul>
+        <li><a href="{{ path('app_calculator_index') }}">Home</a></li>
+        <li><a href="{{ path('app_calculator_sum') }}">Suma</a></li>
+        <li><a href="{{ path('app_calculator_res') }}">Resta</a></li>
+        <li><a href="{{ path('app_calculator_mult') }}">Multiplicación</a></li>
+        <li><a href="{{ path('app_calculator_div') }}">División</a></li>
+    </ul>
+{% endblock %}
